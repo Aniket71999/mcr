@@ -1,0 +1,33 @@
+<div>
+  <div class="login_page">
+    <div class="login_wrapper">
+      <div class="member_login">MEMBER LOGIN</div>
+      <div class="credentials">
+        <!-- <div class="credentials__arrow">
+          <img
+            class="credentials__arrow--block"
+            src="../../assets/png/right-arrow.png"
+          />
+        </div> -->
+        <div class="circle"></div>
+        <div class="clubid">Club ID</div>
+
+        <!-- <label for="clubid"></label> -->
+      </div>
+      <input type="text" class="input" placeholder="Enter Club ID" />
+      <div class="credentials">
+        <div class="circle"></div>
+        <div class="clubid">Password</div>
+      </div>
+      <div class="password">
+        <input
+          type="text"
+          class="password__input"
+          placeholder="Enter Password"
+          [type]="hide ? 'password' : 'text'"
+        />
+        <div class="show_hide" (click)="toggle()">{{ value }}</div>
+      </div>
+    </div>
+  </div>
+</div>

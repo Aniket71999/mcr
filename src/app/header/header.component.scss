@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  background: black;
+  padding: 0px 152px;
+  .header_logo {
+    cursor: pointer;
+    height: 31px;
+    width: 50px;
+    margin: auto 14px auto 0;
+    &__block {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .header_container {
+    padding: 6px 0;
+    display: flex;
+    align-items: center;
+    width: 68%;
+    .navlist {
+      cursor: pointer;
+      color: white;
+      padding: 0 6px;
+      font-size: 10px;
+      font-weight: 600;
+      line-height: 13.5px;
+    }
+    .navlist:hover {
+      color: #a7916e;
+    }
+  }
+  .header_login {
+    display: flex;
+    color: white;
+    justify-content: flex-end;
+    width: 26%;
+    .header_language {
+      display: flex;
+      padding: 0 10px;
+      font-size: 10px;
+      align-items: center;
+      font-weight: 600;
+      &__selected {
+        font-weight: 600;
+        color: #88714d;
+        font-size: 10px;
+      }
+    }
+    .login {
+      cursor: pointer;
+      background: #88714d;
+      color: white;
+      font-size: 10px;
+      font-weight: 600;
+      border: none;
+      padding: 6px 28px;
+    }
+  }
+}
