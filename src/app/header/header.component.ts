@@ -8,13 +8,14 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   constructor(private router: Router) {}
+  // myFunction(x) {
+  //   x.classList.toggle('change');
+  // }
   navigateWithState() {
     this.router.navigate(['app-login-page'], {
       // state: { data: this.signupForm.getRawValue() },
     });
   }
+
   ngOnInit(): void {}
-}
-function navigateWithState() {
-  throw new Error('Function not implemented.');
 }

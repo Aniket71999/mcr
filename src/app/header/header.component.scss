@@ -1,12 +1,55 @@
 .header {
   display: flex;
   background: black;
-  padding: 0px 152px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  @media only screen and (max-width: 1024px) {
+    padding: 8px 20px;
+    .container {
+      width: 44%;
+      display: inline-block;
+      cursor: pointer;
+      margin: auto 0;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 32px;
+      height: 2px;
+      background-color: white;
+      margin: 8px 0;
+      transition: 0.4s;
+    }
+
+    .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2 {
+      opacity: 0;
+    }
+
+    .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
+    }
+  }
   .header_logo {
+    padding-left: 152px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     cursor: pointer;
     height: 31px;
-    width: 50px;
+    width: 76px;
     margin: auto 14px auto 0;
+    @media only screen and (max-width: 1024px) {
+      height: 40px;
+      padding: 0;
+    }
+
     &__block {
       height: 100%;
       width: 100%;
@@ -17,6 +60,9 @@
     display: flex;
     align-items: center;
     width: 68%;
+    @media only screen and (max-width: 1024px) {
+      display: none;
+    }
     .navlist {
       cursor: pointer;
       color: white;
@@ -30,10 +76,14 @@
     }
   }
   .header_login {
+    padding-right: 152px;
     display: flex;
     color: white;
     justify-content: flex-end;
     width: 26%;
+    @media only screen and (max-width: 1024px) {
+      display: none;
+    }
     .header_language {
       display: flex;
       padding: 0 10px;

@@ -3,7 +3,10 @@
   justify-content: center;
   background: #f2f2f2;
   align-items: center;
-  padding: 6px 0;
+  padding: 52px 0 6px 0;
+  @media only screen and (max-width: 1024px) {
+    padding-top: 70px;
+  }
   .update {
     font-size: 10px;
     margin-right: 6px;
@@ -22,11 +25,21 @@
   justify-content: space-between;
   background: black;
   margin-bottom: 4%;
+  @media only screen and (max-width: 1024px) {
+    padding-bottom: 5%;
+    padding-top: 3%;
+    justify-content: start;
+  }
+
   .club_cards {
     text-align: center;
     margin-top: 3%;
     width: 20%;
     padding-left: 130px;
+    @media only screen and (max-width: 1024px) {
+      width: 35%;
+      margin-right: 5%;
+    }
     &__image {
       margin-bottom: 15px;
       &--block {
@@ -76,6 +89,9 @@
     width: 42%;
     // height: 278px;
     margin-bottom: 10px;
+    @media only screen and (max-width: 1024px) {
+      display: none;
+    }
     &__block {
       width: 100%;
       height: 100%;
