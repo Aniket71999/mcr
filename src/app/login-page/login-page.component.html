@@ -1,5 +1,7 @@
+<app-header></app-header>
 <div>
-  <div class="login_page">
+  <div class="login_details">
+    <div class="login_details__background"></div>
     <div class="login_wrapper">
       <div class="member_login">MEMBER LOGIN</div>
       <div class="credentials">
@@ -28,6 +30,22 @@
         />
         <div class="show_hide" (click)="toggle()">{{ value }}</div>
       </div>
+      <div class="forgot_password">FORGOT PASSWORD?</div>
+      <div class="dividing_line"></div>
+      <div class="login_button">
+        <button type="button" class="login_button__button">LOGIN</button>
+      </div>
+      <p class="login_terms">
+        First Time Users, Activate Your Account
+
+        <a class="login_terms--link">HERE</a>
+      </p>
+      <p class="login_terms">
+        By activating your account, you acknowledge that you have read,
+        understand and accept the
+        <a class="login_terms--link">Terms and Conditions</a>
+      </p>
     </div>
   </div>
 </div>
+<app-footer></app-footer>
